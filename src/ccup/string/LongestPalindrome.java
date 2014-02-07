@@ -1,6 +1,5 @@
 package ccup.string;
 
-import java.util.Arrays;
 
 /*
 http://www.careercup.com/question?id=245679
@@ -18,10 +17,13 @@ public class LongestPalindrome {
 		
 		
 		for(int subSize = 1; subSize < paltable.length; subSize++) { // subproblem size
-			
+			for(int start = 0; start + subSize < paltable.length; start++) {
+				int end = start + subSize;
+				
+				if(paltable[start+1][end-1] && input.charAt(start) == input.charAt(end)) // TODO check bounds
+					paltable[start][end] = true;
+			}
 		}
-		
-		
 		return "";
 	}
 	
