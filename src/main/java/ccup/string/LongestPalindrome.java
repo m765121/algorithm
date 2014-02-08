@@ -15,27 +15,36 @@ public class LongestPalindrome {
 			paltable[i][i] = true;
 		}
 		
+		int from = 0;
+		int to = 0;
 		
 		for(int subSize = 1; subSize < paltable.length; subSize++) { // subproblem size
 			for(int start = 0; start + subSize < paltable.length; start++) {
 				int end = start + subSize;
 				
-				if(paltable[start+1][end-1] && input.charAt(start) == input.charAt(end)) // TODO check bounds
-					paltable[start][end] = true;
+				int startSub = start + 1;
+				int endSub = end -1;
+				
+				if(startSub <= endSub) {
+					if(paltable[startSub][endSub] && input.charAt(start) == input.charAt(end)) {
+						if(to - from + 1 < start + end) {
+							from = start;
+							to = end;
+						}
+						
+						paltable[start][end] = true;
+					}
+				}
 			}
 		}
-		return "";
+		
+		
+		
+		return input.substring(from, to + 1);
 	}
 	
 	public static void main(String... args) {
-////		"asddsajk";
-//		// let a[i][j] be true iff i...j is a palindrome then
-//		
-//		// a[i][i] where i == 0...n is true;
-//		
-//		a[i][j] is true if 
-//		
-//		a[i+1][j-1] is true && char(i) == char(j)
+		System.out.println(longestPalindrome("asakdasad"));
 	}
 	
 }
