@@ -1,4 +1,4 @@
-package ccup.selection.array;
+package ccup.array;
 
 // http://www.careercup.com/question?id=14370695
 // Implement the plusplus operator when we are getting the input as integer array = { 9,9,9,9 }.

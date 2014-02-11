@@ -1,4 +1,4 @@
-package ccup.selection.subset;
+package ccup.selection;
 
 import java.util.HashMap;
 import java.util.Map;
