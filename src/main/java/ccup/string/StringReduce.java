@@ -5,7 +5,10 @@ http://www.careercup.com/question?id=12718665
 
 String Reduction 
 
-Given a string consisting of a,b and c's, we can perform the following operation: Take any two adjacent distinct characters and replace it with the third character. For example, if 'a' and 'c' are adjacent, they can replaced with 'b'. What is the smallest string which can result by applying this operation repeatedly? 
+Given a string consisting of a,b and c's, we can perform the following operation: 
+Take any two adjacent distinct characters and replace it with the third character. 
+For example, if 'a' and 'c' are adjacent, they can replaced with 'b'.
+What is the smallest string which can result by applying this operation repeatedly? 
 
 Input: 
 The first line contains the number of test cases T. T test cases follow. Each case contains the string you start with. 

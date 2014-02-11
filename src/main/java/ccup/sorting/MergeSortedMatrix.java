@@ -47,8 +47,6 @@ public class MergeSortedMatrix {
 			}
 
 			sorted[i] = min.value;
-
-
 		}
 
 		return sorted;
