@@ -22,6 +22,18 @@ public class Node<T> {
 		next = newNode;
 		return newNode;
 	}
+	
+	public static int getLength(Node<?> head) {
+		Node<?> traverse = head;
+		int count = 0;
+		
+		while(traverse != null) {
+			count++;
+			traverse = traverse.next;
+		}
+		
+		return count;
+	}
 
 	
 	public String toString() {
