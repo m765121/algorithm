@@ -8,32 +8,6 @@ import ccup.linkedlist.util.Node;
 If yes find intersection point.
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 public class Intersect {
 	
 	/*            
